@@ -36,8 +36,7 @@ public class MainActivity extends AppCompatActivity {
         ArrayList<StudentResult> resultsData = new ArrayList<>();
         Calendar calendar = Calendar.getInstance();
         ArrayList<StudentResult.ResultData> data;
-        for (int i = 0; i < 10; i++) {
-            for (int j = 0; j<50;j++){
+        for (int i = 0; i < 10; i++) {            for (int j = 0; j<50;j++){
                 data = new ArrayList<>();
                 calendar.add(Calendar.DAY_OF_YEAR,j);
                 data.add(new StudentResult.ResultData("Date:", new SimpleDateFormat("dd MMM YYYY", Locale.getDefault()).format(calendar.getTime())));

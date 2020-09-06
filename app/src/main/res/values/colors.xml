@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorBackground">#fafafa</color>
-    <color name="colorSurface">#ffffff</color>
-    <color name="colorOnSurface">#000000</color>
-    <color name="colorOnSurfaceLight">#80000000</color>
-    <color name="colorStroke">#40000000</color>
-    <color name="colorRipple">#1A000000</color>
-
     <color name="colorAccent">#37E2BD</color>
-    <color name="colorOnAccent">#FFFFFF</color>
     <color name="colorPrimary">#1A6A7C</color>
     <color name="colorPrimaryDark">#1A4D7C</color>
 </resources>
