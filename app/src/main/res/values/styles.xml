@@ -1,0 +1,68 @@
+<resources>
+    <style name="ResultTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="backgroundColor">@color/colorBackground</item>
+        <item name="android:windowBackground">@color/colorBackground</item>
+        <item name="android:statusBarColor">@color/colorBackground</item>
+        <item name="android:windowLightStatusBar">@bool/modeNotNight</item>
+    </style>
+
+    <style name="ResultTheme.CardTextHeader" parent="ResultTheme">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">22sp</item>
+        <item name="fontFamily">@font/lato_bold</item>
+        <item name="android:textColor">@color/colorOnSurface</item>
+    </style>
+
+    <style name="ResultTheme.CardText" parent="ResultTheme">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">16sp</item>
+        <item name="fontFamily">@font/lato_regular</item>
+        <item name="android:textColor">@color/colorOnSurfaceLight</item>
+    </style>
+
+    <style name="ResultTheme.CardView" parent="ResultTheme">
+        <item name="strokeColor">@color/colorStroke</item>
+        <item name="cardBackgroundColor">@color/colorSurface</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="cardElevation">0dp</item>
+        <item name="cardCornerRadius">8dp</item>
+    </style>
+
+    <style name="ResultTheme.Spinner" parent="Platform.Widget.AppCompat.Spinner">
+        <item name="android:spinnerMode">dropdown</item>
+        <item name="android:spinnerStyle">@layout/spinner_text</item>
+        <item name="android:spinnerDropDownItemStyle">@layout/spinner_dropdown</item>
+        <item name="android:background">@drawable/spinner_background</item>
+        <item name="android:popupBackground">@drawable/popup_background</item>
+    </style>
+
+    <style name="ResultTheme.SpinnerText" parent="android:Widget.TextView.SpinnerItem">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:fontFamily">@font/lato_regular</item>
+        <item name="android:textColor">@color/colorOnSurface</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="singleLine">true</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:dropDownSelector">?attr/listChoiceBackgroundIndicator</item>
+    </style>
+
+    <style name="ResultTheme.SpinnerDropDown" parent="ResultTheme">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">18sp</item>
+        <item name="fontFamily">@font/lato_regular</item>
+        <item name="android:textColor">@color/colorOnSurface</item>
+        <item name="android:paddingVertical">2dp</item>
+        <item name="android:paddingHorizontal">2dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+    </style>
+</resources>
