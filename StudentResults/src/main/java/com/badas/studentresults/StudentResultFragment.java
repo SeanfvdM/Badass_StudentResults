@@ -43,7 +43,7 @@ public class StudentResultFragment extends ResultFragment {
             @Override
             public void onClick(View v) {
                 recyclerView.smoothScrollToPosition(0);
-//                scrollingToTop = true;
+                scrollingToTop = true;
             }
         });
 
@@ -51,14 +51,14 @@ public class StudentResultFragment extends ResultFragment {
             @Override
             public void onScrollStateChanged(@NonNull RecyclerView recyclerView, int newState) {
                 super.onScrollStateChanged(recyclerView, newState);
-//                if (newState == RecyclerView.SCROLL_STATE_SETTLING || newState == RecyclerView.SCROLL_STATE_IDLE)
-//                    scrollingToTop = false;
+                if (newState == RecyclerView.SCROLL_STATE_SETTLING || newState == RecyclerView.SCROLL_STATE_IDLE)
+                    scrollingToTop = false;
             }
 
             @Override
             public void onScrolled(@NonNull RecyclerView recyclerView, int dx, int dy) {
                 super.onScrolled(recyclerView, dx, dy);
-                if (recyclerView.computeVerticalScrollOffset() > 0 /*&& !scrollingToTop*/)
+                if (recyclerView.computeVerticalScrollOffset() > 0 && !scrollingToTop)
                     scrollToTop.show();
                 else
                     scrollToTop.hide();
